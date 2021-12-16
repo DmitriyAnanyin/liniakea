@@ -1,0 +1,76 @@
+@import "vars";
+@import "vendor/reset";
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    color: $white;
+
+    // background: url(../images/pct_main.svg) center center no-repeat fixed,
+    //             url(../images/0.svg) 100% 100% no-repeat fixed,
+    //             url(../images/1.svg) 100% 100% no-repeat fixed,
+    //             url(../images/2.svg) 100% 100% no-repeat fixed,
+    //             url(../images/3.svg) 100% 100% no-repeat fixed;
+    background: url(../images/category/1.png) 100% 100% no-repeat fixed,
+                url(../images/category/2.png) 100% 100% no-repeat fixed,
+                url(../images/category/3.png) 100% 100% no-repeat fixed;
+                background-color: $bgColor;
+    background-size: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+h2 {
+    font-size: 25px;
+    line-height: 29px;
+    color: $txtGreen;
+    width: 50rem;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 2rem;
+    color: $txtGreen;
+    margin: 1rem 0;
+}
+p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    height: calc(100vh * 3);
+    width: 45%;
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+.container {
+    height: 100vh;
+    padding: 8rem 0 13rem 5rem;
+}
+
+
+// BLOCKS
+
+@import "blocks/sidebar";
+@import "blocks/home_page";
+@import "blocks/category_page";
+@import "blocks/edit_page";
+@import "blocks/tool_page";
